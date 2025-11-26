@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Układ bloków</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #ffcccb; /* jasny czerwony */
+            border: 1px solid #000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #ffe4b5; /* jasny pomarańcz */
+            border: 1px solid #000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #000;
+        }
+
+        .nav {
+            background-color: #add8e6; /* jasny niebieski */
+            border: 1px solid #000;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .left {
+            background-color: #90ee90; /* jasna zieleń */
+            border: 1px solid #000;
+            flex: 1;
+            padding: 20px;
+        }
+
+        .center {
+            background-color: #ffffcc; /* jasny żółty */
+            border: 1px solid #000;
+            flex: 1;
+            padding: 20px;
+        }
+
+        .right {
+            background-color: #d8bfd8; /* jasny fiolet */
+            border: 1px solid #000;
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Blok nagłówkowy
+    </header>
+
+    <div class="main">
+
+        <div class="nav">
+            Blok nawigacyjny
+        </div>
+
+        <div class="content">
+            <div class="left">Sekcja lewa</div>
+            <div class="center">Sekcja środkowa</div>
+            <div class="right">Blok boczny</div>
+        </div>
+
+    </div>
+
+    <footer>
+        Blok stopki
+    </footer>
+
+</body>
+</html>
